@@ -10,6 +10,8 @@ html {
   animation-name: txtcolor;
   animation-duration: 5s;
   margin-top: 3%;
+
+  text-shadow: 2px 2px 0px #eee, 4px 4px 0px #707070;
 }
 
 @keyframes txtcolor {
@@ -56,6 +58,14 @@ nav li {
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: auto;
+}
+
+.containermain .past-img-jonas img{
+  margin-left: 20% ;
+}
+
+.containermain .past-img-nainakat img{
+  margin-left: 20% ;
 }
 
 .containermain img {
@@ -115,12 +125,18 @@ img:hover {
 
 footer{
   background-color: black;
-  color: white
+  color: white;
+  margin-top: 20px;
+}
+
+footer p{
+  text-align: center;
+  size: 30px;
 }
 
 .containerresume #res-text{ 
   text-align: center;
-  margin-top: 5%;
+  margin: 5%;
  }
 
 .containerresume #myresume{
@@ -161,6 +177,149 @@ footer{
   margin-left: 3%;
   font-size: 20px;
   margin-bottom: 7%;
+}
+
+
+@media screen and (min-width: 800px){
+
+   nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+   }
+
+   nav a{ 
+   font-size: 1.5em; 
+  }
+
+   .nav {
+    border: 5px solid #DC143D;
+   }
+
+  .containermain{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 1vw;
+    grid-row-gap: 2vw;
+   }
+
+  .containermain img {
+    max-width: 30vw;
+    justify-content: middle;
+  }
+
+  .containermain .aboutme{
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin-top: -5%
+  }
+
+  .headshot{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .containermain .about-img-family{
+    grid-column: 2;
+    grid-row: 2;
+    overflow: hidden;
+  }
+
+  .containermain .past-img-grad img{
+    margin-top: 10vw;
+
+  }
+
+  .containerproj {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .containerproj img{
+    max-width: 35vw;
+    max-height: 35vw;
+    margin-left: 4vw;
+  }
+
+  .containerproj .cubs{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .containerproj .cubs-img{
+    margin-top: 5%;
+  }
+
+  .containerproj .mich{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .containerproj .mich-img{
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .containerproj .athletics{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .containerproj .athletics-img img {
+    height: 27vw;
+    margin-top: 3vw;
+  }
+
+  .containerproj .future{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .containerproj .future-img{
+    margin-top: 7vw;
+  }
+
+  .containerproj h2{
+    font-size: 2em;
+  }
+
+  .containerproj p{
+    font-size: 1.5em;
+  }
+
+
+}
+
+@media screen and (min-width: 1000px){
+  .nav {
+    border: 5px solid black;
+   }
+
+  body{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/backgroundimg.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  height: 400px;  }              /* Parallax effect */
+
+  .myinfo p{
+  margin: 10px;
+  outline: 4px solid black;
+  outline-offset: 10px;
+  font-size: 1.5em;
+  }
+
+  .contactform label{
+    font-size: 1.5em;
+    margin-right: 10px;
+    margin-left: 3%;
+  }
+
+
+
 }
 
 
